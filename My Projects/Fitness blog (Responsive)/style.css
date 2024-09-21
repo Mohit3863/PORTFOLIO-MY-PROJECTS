@@ -1,0 +1,374 @@
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Sofadi+One&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+  box-sizing: border-box;
+}
+
+P {
+  font-family: "Bebas Neue", sans-serif;
+}
+img {
+  box-shadow: 10px 10px 10px 10px rgb(129, 126, 126);
+  margin: 20px 0;
+}
+
+b {
+  color: #158a9c;
+}
+video {
+  margin-bottom: 20px;
+}
+
+nav {
+  border-top: 2px solid black;
+  border-bottom: 2px solid black;
+  position: sticky;
+  top: 0;
+  background-color: #d4e2e4;
+  height: 80px;
+  width: 100%;
+  /* background-color: #D4AFB9; */
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  gap: 10px;
+}
+nav img {
+  box-shadow: none;
+  padding-top: 20px;
+}
+nav ul {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+nav ul li {
+  margin: 26px;
+  font-size: 18px;
+  font-weight: 700;
+  list-style: none;
+}
+
+nav ul li a {
+  color: #158a9c;
+
+  text-decoration: none;
+}
+
+nav ul li a:hover {
+  color: #a4c0c5;
+
+  transition: all 0.5s ease;
+}
+.dropbtn {
+  background-color: #d4e2e4;
+  color: #158a9c;
+
+  padding: 16px;
+  font-size: 18px;
+  font-weight: 700;
+  border: none;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+dropdown-content a:hover {
+  color: #a4c0c5;
+  cursor: pointer;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown:hover .dropbtn {
+  color: #a4c0c5;
+  cursor: pointer;
+  transition: all 0.5s ease;
+}
+
+header {
+  height: 250px;
+  width: 100%;
+  background-color: #d4e2e4;
+  color: #7ec4cf;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 20px 10px 20px 10px;
+  border-bottom: 2px solid black;
+}
+header h1 {
+  font-size: 36px;
+  color: #158a9c;
+}
+
+#blog1 {
+  margin: 10px;
+  overflow: hidden;
+  border: 2px solid black;
+  color: #67c5d3;
+  padding: 20px 10px 20px 10px;
+  height: 1000px;
+  width: 98%;
+  background-color: #d4e2e4;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+#blog1 h1 {
+  font-size: 36px;
+  color: #158a9c;
+}
+
+#blog1 p {
+  text-align: center;
+  color: #7ec4cf;
+}
+#blog2 {
+  margin: 10px;
+  overflow: hidden;
+  border: 2px solid black;
+  color: #7ec4cf;
+  padding: 20px 10px 20px 10px;
+  height: 1100px;
+  width: 98%;
+  background-color: #d4e2e4;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+#blog2 h1 {
+  font-size: 36px;
+  color: #158a9c;
+}
+
+#blog2 p {
+  text-align: center;
+  color: #7ec4cf;
+}
+#blog3 {
+  margin: 10px;
+  overflow: hidden;
+  border: 2px solid black;
+  color: #7ec4cf;
+  padding: 20px 10px 20px 10px;
+  height: 1000px;
+  width: 98%;
+  background-color: #d4e2e4;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+#blog3 h1 {
+  font-size: 36px;
+  color: #158a9c;
+}
+
+#blog3 p {
+  text-align: center;
+  color: #7ec4cf;
+}
+section {
+  padding: 20px 0;
+}
+.about {
+  background-image: url(https://t4.ftcdn.net/jpg/02/74/29/39/360_F_274293946_rxtwEMz4qaXUF9Cz6S5ZgIbRYh7lMvP4.jpg);
+  background-position: center center;
+  background-size: cover;
+  margin: 8px 8px 8px 8px;
+  border: 1px solid black;
+  padding-left: 10px;
+  height: 150px;
+  width: 98%;
+  box-shadow: 10px 5px 5px rgba(15, 15, 17, 0.123);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  font-weight: 200;
+}
+section h1 {
+  text-align: center;
+}
+
+section input,
+textarea {
+  width: 90vw;
+  margin-left: 10px;
+}
+section label {
+  margin-left: 15px;
+  font-size: 16px;
+  font-weight: 600;
+}
+section #submit {
+  height: 30px;
+  width: 70px;
+  border: 2px solid black;
+  margin-left: 10px;
+  padding: 5px;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 600;
+  border-radius: 10px;
+}
+
+section #submit:hover {
+  background: darkgrey;
+  transition: all 0.5s ease-in-out;
+}
+section div {
+  font-size: 16px;
+  font-weight: 600;
+}
+
+section img {
+  box-shadow: none;
+  position: relative;
+  top: 0;
+  margin: -2px 0;
+}
+.social {
+  margin-left: 15px;
+  display: flex;
+  flex-direction: column;
+}
+.social div {
+  color: black;
+  font-size: 18px;
+  font-weight: 900;
+}
+.social a {
+  text-decoration: none;
+  color: black;
+  font-size: 18px;
+  font-weight: 900;
+}
+
+.social a:hover {
+  color: rgb(155, 143, 143);
+  transition: all 0.3s ease;
+}
+
+footer {
+  background-color: #d4e2e4;
+  color: #158a9c;
+  height: 80px;
+  width: 100%;
+  border: 2px solid black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+}
+footer img {
+  background-color: #d4e2e4;
+  box-shadow: none;
+}
+
+@media (max-width: 950px) {
+  nav {
+    position: relative;
+    top: 0;
+    height: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    gap: 10px;
+  }
+
+  nav ul {
+    display: flex;
+
+    gap: 2px;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+  header {
+    height: 80%;
+  }
+  #blog1,
+  #blog2,
+  #blog3 {
+    height: 100%;
+  }
+
+  .about {
+    height: 100%;
+  }
+}
+
+@media (max-width: 672px ){
+  nav {
+    height: 1%;
+    width: 100vw;
+  gap: 0; }
+nav img{
+  height: 50px;
+}
+  nav ul {
+    height: 10vh;
+    width: 100vw;
+    overflow: hidden;
+    display: flex;
+  }
+
+  nav ul li {
+    font-size: 10px;
+    margin: 0px;
+  }
+  .dropbtn {
+    background-color: #d4e2e4;
+    color: #158a9c;
+
+    padding: 16px;
+    font-size: 10px;
+    font-weight: 700;
+    border: none;
+    z-index: 10;
+  }
+  .dropdown:hover .dropbtn {
+    color: #a4c0c5;
+    cursor: pointer;
+    transition: all 0.5s ease;
+  }
+  #blog1, #blog2, #blog3{
+    width: auto;
+  }  
+  .about{
+    width: auto;
+  }
+}

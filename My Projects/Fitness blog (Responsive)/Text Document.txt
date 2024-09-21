@@ -1,0 +1,10 @@
+
+Brief about my design choices:
+
+In this assignment i chose the fitness blog as a blog topic. I kept the design siple and pleaseable to look at using not more then 1 color theme all over the website. i alse added some videos for better understanding of the articles i wrote. i used different font styles for the heading angd paragraphs. i also added transition over some elements on hovering. and much more.
+
+These were the challenges faced by me during making of this assignment :
+
+1.Responsive Design: Creating a layout that adapts well to various screen sizes (mobile, tablet, desktop) is crucial but challenging.
+
+2.CSS Specificity and Conflicts: Managing complex stylesheets without causing conflicts or unwanted overrides between CSS rules
