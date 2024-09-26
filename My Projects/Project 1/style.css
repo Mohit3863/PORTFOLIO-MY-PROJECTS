@@ -1,0 +1,789 @@
+@import url("https://fonts.googleapis.com/css2?family=Baloo+Bhaina+2:wght@400..800&family=Dosis:wght@200..800&family=Martel+Sans:wght@200;300;400;600;700;800;900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", system-ui;
+}
+body {
+  width: 100%;
+}
+/** nav - bar **/
+nav {
+  position: fixed;
+  top: 0;
+  height: 96px;
+  width: 100%;
+  background-color: black;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  border: 1px solid white;
+}
+
+nav .logo img {
+  position: relative;
+  top: 3px;
+  height: 90px;
+  width: 150px;
+  border: 1px solid white;
+  cursor: pointer;
+}
+
+nav ul {
+  color: white;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+nav ul li {
+  margin: 34px;
+  list-style: none;
+  font-size: 20px;
+  font-weight: 600;
+  font-family: "Poppins", system-ui;
+  cursor: pointer;
+}
+nav ul li a {
+  color: white;
+  text-decoration: none;
+}
+nav ul li a:hover {
+  color: rgb(223, 110, 45);
+  transition: all 0.5s ease-in-out;
+}
+
+nav .mode {
+  height: 35px;
+  width: 110px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid white;
+  background-color: black;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+nav .sm-logo {
+  display: flex;
+  justify-content: center;
+}
+
+nav .sm-logo img {
+  filter: invert();
+  padding: 8px;
+  margin-right: 5px;
+  height: 18px;
+  width: 28px;
+  border-radius: 5px;
+}
+
+nav .sm-logo :nth-child(1) {
+  border-right: 2px solid rgb(22, 21, 21);
+  margin-right: 5px;
+}
+
+nav .sm-logo img:active {
+  background-color: rgb(236, 12, 12);
+}
+/* nav .sm-logo img:active {
+  background-color: rgb(236, 12, 12);
+} */
+/** home - section **/
+.home {
+  padding-top: 80px;
+  height: 80vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 100px;
+  background-color: rgb(73, 65, 65);
+  color: white;
+}
+
+.home .image {
+  margin-left: 100px;
+}
+.home .image img {
+  border-radius: 10px;
+  transition: width 2s, height 2s, background-color 2s, rotate 2s;
+  cursor: pointer;
+}
+
+.home .image img:hover {
+  background-color: #ffcccc;
+  width: 200px;
+  height: 200px;
+  rotate: 180deg;
+}
+.home .intro {
+  margin-right: 80px;
+}
+.home .intro h1 {
+  color: rgb(204, 92, 35);
+  font-size: 42px;
+}
+.home .intro p {
+  margin-top: 30px;
+  font-family: "Poppins", system-ui;
+  font-size: 18px;
+  font-weight: 400;
+}
+
+.home .intro button {
+  height: 30px;
+  width: 90px;
+  margin-top: 20px;
+  font-size: 12px;
+  font-weight: 600;
+  border-radius: 5px;
+  cursor: pointer;
+  background-color: rgb(143 110 93);
+  border: none;
+}
+.home .intro button a {
+  color: black;
+  text-decoration: none;
+}
+.home .intro button a:hover {
+  color: white;
+}
+.home .intro button:hover {
+  border: 2px solid black;
+
+  background-color: rgb(223, 110, 45);
+  transition: background-color 0.5s ease-in;
+}
+.home .social img {
+  height: 24px;
+  width: 24px;
+  margin: 30px 10px 0px 0px;
+}
+.home .social img:hover {
+  filter: invert();
+  transition: all 0.2s ease-in;
+}
+hr {
+  width: 10px;
+}
+/** about - section **/
+.about {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 200px;
+  background-color: rgb(73, 65, 65);
+  color: white;
+}
+.about .image {
+  margin-left: 100px;
+}
+.about .image img {
+  border-radius: 10px;
+
+  cursor: pointer;
+}
+
+.about .intro {
+  margin-right: 80px;
+}
+.about .intro h1 {
+  color: rgb(204, 92, 35);
+  font-size: 42px;
+}
+.about .intro p {
+  margin-top: 30px;
+  font-family: "Poppins", system-ui;
+  font-size: 18px;
+  font-weight: 400;
+}
+
+.about .intro button {
+  height: 30px;
+  width: 90px;
+  margin-top: 20px;
+  font-size: 12px;
+  font-weight: 600;
+  border-radius: 5px;
+  cursor: pointer;
+
+  background-color: rgb(143 110 93);
+  border: none;
+}
+.about .intro button {
+  color: black;
+  text-decoration: none;
+}
+.about .intro button:hover {
+  color: white;
+}
+.about .intro button:hover {
+  border: 2px solid black;
+  background-color: rgb(223, 110, 45);
+  transition: background-color 0.5s ease-in;
+}
+.about .social img {
+  height: 24px;
+  width: 24px;
+  margin: 30px 10px 0px 0px;
+}
+.about .social img:hover {
+  filter: invert();
+  transition: all 0.2s ease-in;
+}
+/** skill - section **/
+.skill {
+  height: 80vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 60px;
+  background-color: rgb(73, 65, 65);
+  color: white;
+  text-align: center;
+}
+.skill h1 {
+  font-size: 70px;
+}
+#skills {
+  height: 350px;
+  width: 80vw;
+  padding-bottom: 10px;
+  background-color: rgb(114, 107, 107);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  border-radius: 15px;
+}
+.skill .bar1 {
+  height: 20px;
+  width: 70vw;
+  background-color: black;
+  border-radius: 5px;
+}
+.skill .bar1 .line1 {
+  height: 20px;
+  width: 68vw;
+  background-color: rgb(179, 130, 130);
+  border-radius: 5px;
+}
+.skill .bar1 .line1 span {
+  color: black;
+  font-weight: 800;
+  margin-left: 10px;
+}
+.skill .bar2 {
+  height: 20px;
+  width: 70vw;
+  background-color: black;
+  border-radius: 5px;
+}
+.skill .bar2 .line2 {
+  height: 20px;
+  width: 66vw;
+  background-color: rgb(179, 130, 130);
+  border-radius: 5px;
+}
+.skill .bar2 .line2 span {
+  color: black;
+  font-weight: 800;
+  margin-left: 10px;
+}
+.skill .bar3 {
+  height: 20px;
+  width: 70vw;
+  background-color: black;
+  border-radius: 5px;
+}
+.skill .bar3 .line3 {
+  height: 20px;
+  width: 64vw;
+  background-color: rgb(179, 130, 130);
+  border-radius: 5px;
+}
+.skill .bar3 .line3 span {
+  color: black;
+  font-weight: 800;
+  margin-left: 10px;
+}
+.skill .bar4 {
+  height: 20px;
+  width: 70vw;
+  background-color: black;
+  border-radius: 5px;
+}
+.skill .bar4 .line4 {
+  height: 20px;
+  width: 62vw;
+  background-color: rgb(179, 130, 130);
+  border-radius: 5px;
+}
+.skill .bar4 .line4 span {
+  color: black;
+  font-weight: 800;
+  margin-left: 10px;
+}
+/** certification - section **/
+.certi {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 60px;
+  background-color: rgb(73, 65, 65);
+  color: white;
+}
+.certi h1 {
+  font-size: 60px;
+  text-decoration: underline;
+}
+#certify {
+  height: 500px;
+  width: 80vw;
+  background-color: rgb(180, 170, 190);
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+}
+#certify .card {
+  height: 400px;
+  width: 20vw;
+  background-color: rgb(150, 124, 120);
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  gap: 10px;
+}
+#certify .card:hover {
+  cursor: pointer;
+  height: 450px;
+  width: 22vw;
+  transition: all ease-in-out;
+}
+#certify .card p {
+  padding: 10px;
+}
+#certify .card button {
+  height: 30px;
+  width: 70px;
+  border: 1px solid black;
+  border-radius: 5px;
+}
+#certify .card button a {
+  text-decoration: none;
+  color: black;
+  font-weight: 600;
+  font-size: 14px;
+}
+#certify .card button:hover {
+  cursor: pointer;
+  background-color: rgb(109, 96, 94);
+  transition: all 0.5s ease-in-out;
+}
+#certify .card button a:hover {
+  color: white;
+}
+/** projects - section **/
+.projects {
+  height: 120vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+  background-color: rgb(73, 65, 65);
+  color: white;
+}
+.projects h1 {
+  margin-top: 30px;
+  font-size: 44px;
+}
+
+.grid {
+  height: 100vh;
+  width: 70vw;
+  /* background-color: red; */
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.box {
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 20px;
+  height: 40vh;
+  width: 20vw;
+  /* background-color: rgb(119, 151, 119); */
+  border: 4px solid rgb(255, 254, 254);
+  box-shadow: 0px 10px 10px 0 rgb(255, 255, 255);
+  border-radius: 10px;
+  gap: 10px;
+}
+.box:hover {
+  height: 38vh;
+  width: 19vw;
+  transition: all ease-out;
+}
+.box h3 {
+  font-family: "Roboto Serif", serif;
+
+  font-size: 24px;
+
+  font-weight: 800;
+}
+.box img {
+  height: 20vh;
+  width: 18vw;
+}
+.box button {
+  height: 30px;
+  width: 100px;
+  font-weight: 600;
+  border-radius: 5px;
+  border: none;
+}
+.box button:hover {
+  background-color: rgb(223, 110, 45);
+  transition: all 0.5s ease-in;
+  border: 2px solid black;
+}
+.box button a {
+  color: black;
+  text-decoration: none;
+}
+
+.box #nukk {
+  height: 40px;
+  width: 10vw;
+  margin: 53px 0;
+}
+/** contact - section **/
+.contact {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  background-color: rgb(73, 65, 65);
+  color: white;
+}
+.contact h1 {
+  font-size: 44px;
+  margin-bottom: 10px;
+}
+.form {
+  display: flex;
+  flex-direction: column;
+}
+.form input {
+  margin: 10px;
+  height: 30px;
+  width: 40vw;
+  padding: 20px;
+  font-size: 16px;
+  border-radius: 10px;
+  border: none;
+}
+.form input:target {
+  border: 2px solid black;
+}
+.contact textarea {
+  font-size: 17px;
+  padding: 20px;
+  border-radius: 10px;
+  border: none;
+}
+.contact button {
+  cursor: pointer;
+  margin-top: 20px;
+  height: 40px;
+  width: 100px;
+  border-radius: 10px;
+  border: none;
+  font-size: 18px;
+  font-weight: 600;
+}
+.contact button:hover {
+  background-color: rgb(223, 110, 45);
+  border: 2px solid black;
+  color: white;
+  transition: all 0.2s ease-in;
+}
+/** footer - section **/
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100px;
+  width: 100%;
+  background-color: black;
+  color: white;
+  gap: 30px;
+  border: 1px solid white;
+}
+footer ul {
+  color: white;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+footer ul li {
+  margin: 14px;
+  list-style: none;
+  font-size: 16px;
+  font-weight: 600;
+  font-family: "Poppins", system-ui;
+  cursor: pointer;
+}
+footer ul li a {
+  color: white;
+  text-decoration: none;
+}
+footer ul li a:hover {
+  color: rgb(223, 110, 45);
+  transition: all 0.5s ease-in-out;
+}
+footer .social img {
+  height: 24px;
+  width: 24px;
+  margin: 10px 25px 0px 0px;
+  filter: invert();
+}
+footer .social img:hover {
+  height: 28px;
+  width: 28px;
+  filter: contrast(0.2);
+  transition: all 0.1s ease-in-out;
+}
+
+/* @media (max-width: 1200px) {
+  .about .intro p {
+    font-size: 13px;
+  }
+} */
+@media (max-width: 1200px) {
+  nav .logo img {
+    display: none;
+  }
+  nav ul li {
+    margin: 14px;
+  }
+  .about {
+    gap: 30px;
+  }
+  .about .intro p {
+    font-size: 15px;
+  }
+  .about .image img {
+    height: 100px;
+    width: 100px;
+  }
+  footer p {
+    margin-left: 10px;
+  }
+  footer .social img {
+    margin: 0px 3px 0px 0px;
+  }
+}
+@media (min-width: 260px) and (max-width: 680px) {
+  nav {
+    margin-right: 16px;
+    height: 50px;
+    width: 100vw;
+    border: none;
+  }
+  nav ul {
+    margin-right: 30px;
+  }
+
+  nav ul li {
+    background-color: white;
+    margin: 5px;
+    padding: 4px;
+    border-radius: 5px;
+    font-size: 9px;
+  }
+  nav ul li:hover {
+    background-color: rgb(196, 167, 140);
+  }
+
+  nav ul li a {
+    color: black;
+    font-size: 8px;
+  }
+  nav ul li a:hover {
+    color: white;
+  }
+  nav .mode {
+    display: none;
+    height: 18px;
+    width: 43px;
+  }
+  nav .sm-logo img {
+    height: 9px;
+    width: 10px;
+    padding: 0px;
+  }
+  .home {
+    height: 77vh;
+    width: 100%;
+    gap: 50px;
+  }
+
+  .home .image img {
+    height: 200px;
+    width: 150px;
+  }
+  .home .intro h1 {
+    font-size: 29px;
+  }
+  .home .intro p {
+    font-size: 10px;
+  }
+  .home .social img {
+    height: 24px;
+    width: 20px;
+    margin: 4px 6px 0px 0px;
+  }
+  .about {
+    height: 80vh;
+    width: 100%;
+  }
+  .about .image {
+    margin-left: 23px;
+  }
+  .about .intro {
+    margin-right: 10px;
+  }
+  .about .intro h1 {
+    font-size: 27px;
+  }
+  .about .intro p {
+    font-size: 9px;
+  }
+  .skill {
+    height: 100vh;
+  }
+  .certi {
+    height: 210vh;
+  }
+  .certi h1 {
+    font-size: 36px;
+  }
+  #certify {
+    background-color: rgb(73, 65, 65);
+    padding: 28px;
+    height: 1100px;
+    flex-direction: column;
+    gap: 50px;
+  }
+  #certify .card {
+    width: 63vw;
+  }
+  #certify .card:hover {
+    width: 65vw;
+  }
+  .projects {
+    height: 95vh;
+  }
+  .projects h1 {
+    margin-top: 0px;
+    font-size: 24px;
+  }
+  .grid {
+    height: 70vh;
+    width: 90%;
+    grid-template-columns: 0.1fr 0.2fr 0.2fr;
+  }
+  .box {
+    height: 24vh;
+    width: 26vw;
+    margin: 4px;
+    gap: 7px;
+  }
+  .box:hover {
+    position: relative;
+    top: 10px;
+    height: 22vh;
+    width: 24vw;
+    transition: all 0.3s ease-in-out;
+  }
+  .box h3 {
+    font-size: 19px;
+  }
+  .box p {
+    font-size: 10px;
+  }
+  .box img {
+    height: 6vh;
+  }
+  .box button {
+    margin-top: 10px;
+    height: 15px;
+    width: 52px;
+    font-size: 8px;
+    font-weight: 800;
+  }
+  .box #nukk {
+    margin: 2px 0px;
+  }
+  .form input {
+    height: 7px;
+    font-size: 11px;
+    width: 62vw;
+  }
+  .contact {
+    height: 90vh;
+  }
+  .contact textarea {
+    width: 66vw;
+  }
+  .contact button {
+    height: 27px;
+    font-size: 13px;
+  }
+  .contact button a {
+    color: black;
+    
+  }
+  footer {
+    height: 50px;
+    gap: 7px;
+    border: none;
+  }
+  footer p {
+    font-size: 10px;
+  }
+  footer ul {
+    display: none;
+  }
+  footer .social img {
+    margin: 5px 3px 0px 0px;
+    height: 20px;
+    width: 15px;
+  }
+}
